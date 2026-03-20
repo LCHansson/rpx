@@ -16,6 +16,7 @@ reference:
       - get_tables
       - table_search
       - table_describe
+      - table_enrich
       - table_minimize
       - table_extract_ids
 
@@ -69,4 +70,5 @@ reference:
 
   - title: Cache management
     contents:
+      - rpx_cache_dir
       - rpx_clear_cache
