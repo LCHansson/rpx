@@ -13,7 +13,7 @@ variable_describe(var_df, max_n = 10, format = "inline", heading_level = 2)
 - var_df:
 
   A tibble returned by
-  [`get_variables()`](https://lchansson.github.io/rpx/reference/get_variables.md).
+  [`get_variables()`](https://lchansson.github.io/pixieweb/reference/get_variables.md).
 
 - max_n:
 

@@ -1,6 +1,6 @@
 # Changelog
 
-## rpx 0.1.0
+## pixieweb 0.1.0
 
 Initial CRAN release.
 
@@ -15,86 +15,86 @@ Initial CRAN release.
   challenges, guidance on finding comparable tables, actionable tips,
   and cross-references.
 - Fixed Unicode `≤` in
-  [`prepare_query()`](https://lchansson.github.io/rpx/reference/prepare_query.md)
+  [`prepare_query()`](https://lchansson.github.io/pixieweb/reference/prepare_query.md)
   documentation that caused LaTeX PDF manual errors.
 
 ### Features
 
 - **API connection**:
-  [`px_api()`](https://lchansson.github.io/rpx/reference/px_api.md)
+  [`px_api()`](https://lchansson.github.io/pixieweb/reference/px_api.md)
   creates reusable connection objects for any PX-Web API (SCB, SSB,
   Statistics Finland, etc.) with automatic version detection (v1/v2).
 - **API availability**:
-  [`px_available()`](https://lchansson.github.io/rpx/reference/px_available.md)
+  [`px_available()`](https://lchansson.github.io/pixieweb/reference/px_available.md)
   performs a lightweight connectivity check, used to guard examples and
   tests.
 - **Table discovery**:
-  [`get_tables()`](https://lchansson.github.io/rpx/reference/get_tables.md)
+  [`get_tables()`](https://lchansson.github.io/pixieweb/reference/get_tables.md)
   searches and lists available tables with support for both v1
   (tree-walking) and v2 (search endpoint) APIs.
 - **Variable inspection**:
-  [`get_variables()`](https://lchansson.github.io/rpx/reference/get_variables.md)
+  [`get_variables()`](https://lchansson.github.io/pixieweb/reference/get_variables.md)
   retrieves variable metadata for any table, including value lists and
   selection types.
 - **Data retrieval**:
-  [`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md)
+  [`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md)
   downloads data with automatic query construction, chunking for large
   requests, and rate limiting.
 - **Codelists**:
-  [`get_codelists()`](https://lchansson.github.io/rpx/reference/get_codelists.md)
+  [`get_codelists()`](https://lchansson.github.io/pixieweb/reference/get_codelists.md)
   retrieves codelist metadata;
-  [`codelist_values()`](https://lchansson.github.io/rpx/reference/codelist_values.md)
+  [`codelist_values()`](https://lchansson.github.io/pixieweb/reference/codelist_values.md)
   and
-  [`codelist_describe()`](https://lchansson.github.io/rpx/reference/codelist_describe.md)
+  [`codelist_describe()`](https://lchansson.github.io/pixieweb/reference/codelist_describe.md)
   for inspection.
 - **Selection helpers**:
-  [`px_all()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-  [`px_top()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-  [`px_bottom()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-  [`px_from()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-  [`px_to()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-  [`px_range()`](https://lchansson.github.io/rpx/reference/px_selections.md)
+  [`px_all()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+  [`px_top()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+  [`px_bottom()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+  [`px_from()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+  [`px_to()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+  [`px_range()`](https://lchansson.github.io/pixieweb/reference/px_selections.md)
   for concise variable selections.
 - **Query workflow**:
-  [`prepare_query()`](https://lchansson.github.io/rpx/reference/prepare_query.md)
+  [`prepare_query()`](https://lchansson.github.io/pixieweb/reference/prepare_query.md)
   for interactive query building;
-  [`compose_table_query()`](https://lchansson.github.io/rpx/reference/compose_table_query.md),
-  [`compose_data_query()`](https://lchansson.github.io/rpx/reference/compose_data_query.md),
-  [`execute_query()`](https://lchansson.github.io/rpx/reference/execute_query.md)
+  [`compose_table_query()`](https://lchansson.github.io/pixieweb/reference/compose_table_query.md),
+  [`compose_data_query()`](https://lchansson.github.io/pixieweb/reference/compose_data_query.md),
+  [`execute_query()`](https://lchansson.github.io/pixieweb/reference/execute_query.md)
   for programmatic access.
 - **Saved queries**:
-  [`save_query()`](https://lchansson.github.io/rpx/reference/save_query.md)
+  [`save_query()`](https://lchansson.github.io/pixieweb/reference/save_query.md)
   and
-  [`get_saved_query()`](https://lchansson.github.io/rpx/reference/get_saved_query.md)
+  [`get_saved_query()`](https://lchansson.github.io/pixieweb/reference/get_saved_query.md)
   for persisting and reloading query specifications.
 - **Table helpers**:
-  [`table_search()`](https://lchansson.github.io/rpx/reference/table_search.md),
-  [`table_describe()`](https://lchansson.github.io/rpx/reference/table_describe.md),
-  [`table_enrich()`](https://lchansson.github.io/rpx/reference/table_enrich.md),
-  [`table_minimize()`](https://lchansson.github.io/rpx/reference/table_minimize.md),
-  [`table_extract_ids()`](https://lchansson.github.io/rpx/reference/table_extract_ids.md)
+  [`table_search()`](https://lchansson.github.io/pixieweb/reference/table_search.md),
+  [`table_describe()`](https://lchansson.github.io/pixieweb/reference/table_describe.md),
+  [`table_enrich()`](https://lchansson.github.io/pixieweb/reference/table_enrich.md),
+  [`table_minimize()`](https://lchansson.github.io/pixieweb/reference/table_minimize.md),
+  [`table_extract_ids()`](https://lchansson.github.io/pixieweb/reference/table_extract_ids.md)
   for working with table metadata.
 - **Variable helpers**:
-  [`variable_search()`](https://lchansson.github.io/rpx/reference/variable_search.md),
-  [`variable_describe()`](https://lchansson.github.io/rpx/reference/variable_describe.md),
-  [`variable_minimize()`](https://lchansson.github.io/rpx/reference/variable_minimize.md),
-  [`variable_extract_ids()`](https://lchansson.github.io/rpx/reference/variable_extract_ids.md),
-  [`variable_name_to_code()`](https://lchansson.github.io/rpx/reference/variable_name_to_code.md),
-  [`variable_values()`](https://lchansson.github.io/rpx/reference/variable_values.md)
+  [`variable_search()`](https://lchansson.github.io/pixieweb/reference/variable_search.md),
+  [`variable_describe()`](https://lchansson.github.io/pixieweb/reference/variable_describe.md),
+  [`variable_minimize()`](https://lchansson.github.io/pixieweb/reference/variable_minimize.md),
+  [`variable_extract_ids()`](https://lchansson.github.io/pixieweb/reference/variable_extract_ids.md),
+  [`variable_name_to_code()`](https://lchansson.github.io/pixieweb/reference/variable_name_to_code.md),
+  [`variable_values()`](https://lchansson.github.io/pixieweb/reference/variable_values.md)
   for working with variables.
 - **Data helpers**:
-  [`data_minimize()`](https://lchansson.github.io/rpx/reference/data_minimize.md),
-  [`data_comments()`](https://lchansson.github.io/rpx/reference/data_comments.md),
-  [`data_legend()`](https://lchansson.github.io/rpx/reference/data_legend.md)
+  [`data_minimize()`](https://lchansson.github.io/pixieweb/reference/data_minimize.md),
+  [`data_comments()`](https://lchansson.github.io/pixieweb/reference/data_comments.md),
+  [`data_legend()`](https://lchansson.github.io/pixieweb/reference/data_legend.md)
   for working with downloaded data.
 - **Persistent caching**:
-  [`rpx_cache_dir()`](https://lchansson.github.io/rpx/reference/rpx_cache_dir.md)
+  [`pixieweb_cache_dir()`](https://lchansson.github.io/pixieweb/reference/pixieweb_cache_dir.md)
   and
-  [`rpx_clear_cache()`](https://lchansson.github.io/rpx/reference/rpx_clear_cache.md)
+  [`pixieweb_clear_cache()`](https://lchansson.github.io/pixieweb/reference/pixieweb_clear_cache.md)
   for managing cached API responses using
   [`tools::R_user_dir()`](https://rdrr.io/r/tools/userdir.html).
 - **Citations**:
-  [`px_cite()`](https://lchansson.github.io/rpx/reference/px_cite.md)
+  [`px_cite()`](https://lchansson.github.io/pixieweb/reference/px_cite.md)
   generates citations for downloaded data.
 - **HTTP resilience**: Automatic retry with exponential backoff for
   transient errors and rate limiting (HTTP 429).

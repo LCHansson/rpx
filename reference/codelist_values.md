@@ -13,7 +13,7 @@ codelist_values(cl_df, codelist_id)
 - cl_df:
 
   A tibble returned by
-  [`get_codelists()`](https://lchansson.github.io/rpx/reference/get_codelists.md).
+  [`get_codelists()`](https://lchansson.github.io/pixieweb/reference/get_codelists.md).
 
 - codelist_id:
 

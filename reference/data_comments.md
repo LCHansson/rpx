@@ -13,7 +13,7 @@ data_comments(data_df)
 - data_df:
 
   A tibble returned by
-  [`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md)
+  [`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md)
   with `.comments = TRUE`.
 
 ## Value

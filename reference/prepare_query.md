@@ -3,7 +3,7 @@
 Bridges the gap between table/variable exploration and data fetching.
 Fetches variable metadata, applies sensible defaults for variable
 selections, and returns a query object that can be passed to
-[`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md).
+[`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md).
 
 ## Usage
 
@@ -61,7 +61,7 @@ print(x, ...)
 ## Value
 
 A `<px_query>` object. Pass to
-[`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md)
+[`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md)
 via the `query` parameter.
 
 ## Details
@@ -85,7 +85,8 @@ eliminable variables first, then smallest mandatory, then time last.
 
 The returned query object prints a human-readable summary showing what
 was selected for each variable and why. Modify selections before passing
-to [`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md)
+to
+[`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md)
 by assigning to the `$selections` list.
 
 ## Examples

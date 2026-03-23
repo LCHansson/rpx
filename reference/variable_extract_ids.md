@@ -13,7 +13,7 @@ variable_extract_ids(var_df)
 - var_df:
 
   A tibble returned by
-  [`get_variables()`](https://lchansson.github.io/rpx/reference/get_variables.md).
+  [`get_variables()`](https://lchansson.github.io/pixieweb/reference/get_variables.md).
 
 ## Value
 

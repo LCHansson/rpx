@@ -14,7 +14,7 @@ variable_search(var_df, query, column = NULL)
 - var_df:
 
   A tibble returned by
-  [`get_variables()`](https://lchansson.github.io/rpx/reference/get_variables.md).
+  [`get_variables()`](https://lchansson.github.io/pixieweb/reference/get_variables.md).
 
 - query:
 

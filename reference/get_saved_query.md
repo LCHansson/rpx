@@ -40,7 +40,7 @@ get_saved_query(
 ## Value
 
 A tibble in the same format as
-[`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md).
+[`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md).
 
 ## Examples
 

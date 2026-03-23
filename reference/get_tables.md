@@ -13,7 +13,7 @@ get_tables(
   max_results = NULL,
   .timeout = 15,
   cache = FALSE,
-  cache_location = rpx_cache_dir,
+  cache_location = pixieweb_cache_dir,
   verbose = FALSE
 )
 ```
@@ -54,7 +54,7 @@ get_tables(
 - cache_location:
 
   Cache directory. Defaults to
-  [`rpx_cache_dir()`](https://lchansson.github.io/rpx/reference/rpx_cache_dir.md).
+  [`pixieweb_cache_dir()`](https://lchansson.github.io/pixieweb/reference/pixieweb_cache_dir.md).
 
 - verbose:
 
@@ -87,14 +87,14 @@ if (px_available(scb)) {
 #>    <chr>   <chr> <chr>       <chr>    <chr>   <chr>        <chr>       <chr>    
 #>  1 TAB1391 Corp… ""          public   2026-0… 1998K2       2025K4      Quarterly
 #>  2 TAB6726 Ente… ""          public   2026-0… 2025         2025        Annual   
-#>  3 TAB1895 Indu… ""          public   2026-0… 1990K1       2025K4      Quarterly
-#>  4 TAB4504 Reas… ""          public   2026-0… 1998K1       2025K4      Quarterly
-#>  5 TAB1872 Indu… ""          public   2026-0… 2000M01      2026M01     Monthly  
-#>  6 TAB1411 Corp… ""          public   2026-0… 1997K1       2025K4      Quarterly
-#>  7 TAB1710 Orde… ""          public   2026-0… 2000M01      2026M01     Monthly  
-#>  8 TAB1693 Turn… ""          public   2026-0… 2000M01      2026M01     Monthly  
-#>  9 TAB4894 Prod… ""          public   2026-0… 2010M01      2026M01     Monthly  
-#> 10 TAB4810 Prod… ""          public   2026-0… 2010K1       2025K4      Quarterly
+#>  3 TAB1872 Indu… ""          public   2026-0… 2000M01      2026M01     Monthly  
+#>  4 TAB1411 Corp… ""          public   2026-0… 1997K1       2025K4      Quarterly
+#>  5 TAB1710 Orde… ""          public   2026-0… 2000M01      2026M01     Monthly  
+#>  6 TAB1693 Turn… ""          public   2026-0… 2000M01      2026M01     Monthly  
+#>  7 TAB4894 Prod… ""          public   2026-0… 2010M01      2026M01     Monthly  
+#>  8 TAB4810 Prod… ""          public   2026-0… 2010K1       2025K4      Quarterly
+#>  9 TAB6343 Priv… ""          public   2026-0… 2022K1       2025K4      Quarterly
+#> 10 TAB6587 Priv… ""          public   2026-0… 2022K1       2025K4      Quarterly
 #> # ℹ 90 more rows
 #> # ℹ 5 more variables: variables <list>, subject_code <chr>, subject_path <chr>,
 #> #   source <chr>, discontinued <lgl>

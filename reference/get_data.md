@@ -3,7 +3,7 @@
 The core function for downloading statistical data. Variable selections
 are passed as named arguments via `...`, or via a prepared query object
 from
-[`prepare_query()`](https://lchansson.github.io/rpx/reference/prepare_query.md).
+[`prepare_query()`](https://lchansson.github.io/pixieweb/reference/prepare_query.md).
 
 ## Usage
 
@@ -46,14 +46,14 @@ get_data(
   - `"*"` for all values
 
   - A
-    [px_selections](https://lchansson.github.io/rpx/reference/px_selections.md)
+    [px_selections](https://lchansson.github.io/pixieweb/reference/px_selections.md)
     helper:
-    [`px_all()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-    [`px_top()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-    [`px_bottom()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-    [`px_from()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-    [`px_to()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-    [`px_range()`](https://lchansson.github.io/rpx/reference/px_selections.md)
+    [`px_all()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+    [`px_top()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+    [`px_bottom()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+    [`px_from()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+    [`px_to()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+    [`px_range()`](https://lchansson.github.io/pixieweb/reference/px_selections.md)
 
   - Omitted variables are eliminated if the API allows it Ignored when
     `query` is provided.
@@ -61,7 +61,7 @@ get_data(
 - query:
 
   A `<px_query>` object from
-  [`prepare_query()`](https://lchansson.github.io/rpx/reference/prepare_query.md).
+  [`prepare_query()`](https://lchansson.github.io/pixieweb/reference/prepare_query.md).
   When provided, `table_id`, `...`, and `.codelist` are taken from the
   query object.
 

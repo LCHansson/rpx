@@ -15,7 +15,7 @@ table_search(table_df, query, column = NULL)
 - table_df:
 
   A tibble returned by
-  [`get_tables()`](https://lchansson.github.io/rpx/reference/get_tables.md).
+  [`get_tables()`](https://lchansson.github.io/pixieweb/reference/get_tables.md).
 
 - query:
 

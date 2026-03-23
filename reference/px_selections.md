@@ -1,7 +1,7 @@
 # Create a PX-Web selection object
 
 These helpers create `<px_selection>` objects that
-[`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md)
+[`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md)
 translates into the appropriate API filter. Each represents a different
 way to select variable values in PX-Web queries.
 

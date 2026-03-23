@@ -3,8 +3,8 @@
 ### All vignettes
 
 - [Quick start guide to
-  rpx](https://lchansson.github.io/rpx/articles/a-quickstart.md):
+  pixieweb](https://lchansson.github.io/pixieweb/articles/a-quickstart.md):
 - [Introduction to
-  rpx](https://lchansson.github.io/rpx/articles/introduction-to-rpx.md):
+  pixieweb](https://lchansson.github.io/pixieweb/articles/introduction-to-pixieweb.md):
 - [Working with multiple
-  APIs](https://lchansson.github.io/rpx/articles/multi-api.md):
+  APIs](https://lchansson.github.io/pixieweb/articles/multi-api.md):

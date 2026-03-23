@@ -3,7 +3,7 @@
 Fetches the metadata endpoint for each table and adds columns with
 notes, contents description, contact information, and more. This is an
 extra API call per table, so it's separated from
-[`get_tables()`](https://lchansson.github.io/rpx/reference/get_tables.md)
+[`get_tables()`](https://lchansson.github.io/pixieweb/reference/get_tables.md)
 to give users control over when the cost is incurred.
 
 ## Usage
@@ -13,7 +13,7 @@ table_enrich(
   table_df,
   api = NULL,
   cache = FALSE,
-  cache_location = rpx_cache_dir,
+  cache_location = pixieweb_cache_dir,
   verbose = FALSE
 )
 ```
@@ -23,13 +23,13 @@ table_enrich(
 - table_df:
 
   A tibble returned by
-  [`get_tables()`](https://lchansson.github.io/rpx/reference/get_tables.md).
+  [`get_tables()`](https://lchansson.github.io/pixieweb/reference/get_tables.md).
 
 - api:
 
   A `<px_api>` object. Optional — if omitted, the API connection stored
   by
-  [`get_tables()`](https://lchansson.github.io/rpx/reference/get_tables.md)
+  [`get_tables()`](https://lchansson.github.io/pixieweb/reference/get_tables.md)
   is used automatically.
 
 - cache:
@@ -41,7 +41,7 @@ table_enrich(
 - cache_location:
 
   Directory for cache files. Defaults to
-  [`rpx_cache_dir()`](https://lchansson.github.io/rpx/reference/rpx_cache_dir.md).
+  [`pixieweb_cache_dir()`](https://lchansson.github.io/pixieweb/reference/pixieweb_cache_dir.md).
 
 - verbose:
 
@@ -203,25 +203,23 @@ if (px_available(scb)) {
 #>     statistics by region and sex. Year 2025--</a> 
 #> 
 #> ℹ Enriching 100 table(s) with metadata.
-#> Fetching metadata ■■                                 3% | ETA: 36s
-#> Fetching metadata ■■■                                6% | ETA: 41s
-#> Fetching metadata ■■■■■                             12% | ETA: 41s
-#> Fetching metadata ■■■■■■                            18% | ETA: 39s
-#> Fetching metadata ■■■■■■■■                          24% | ETA: 36s
-#> Fetching metadata ■■■■■■■■■■                        30% | ETA: 33s
-#> Fetching metadata ■■■■■■■■■■■■                      36% | ETA: 31s
-#> Fetching metadata ■■■■■■■■■■■■■■                    43% | ETA: 27s
-#> Fetching metadata ■■■■■■■■■■■■■■■■                  49% | ETA: 24s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■                 55% | ETA: 22s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■               60% | ETA: 20s
+#> Fetching metadata ■■                                 3% | ETA: 38s
+#> Fetching metadata ■■■                                5% | ETA: 41s
+#> Fetching metadata ■■■■                              11% | ETA: 42s
+#> Fetching metadata ■■■■■■                            17% | ETA: 40s
+#> Fetching metadata ■■■■■■■■                          23% | ETA: 38s
+#> Fetching metadata ■■■■■■■■■■                        29% | ETA: 35s
+#> Fetching metadata ■■■■■■■■■■■                       35% | ETA: 32s
+#> Fetching metadata ■■■■■■■■■■■■■                     41% | ETA: 29s
+#> Fetching metadata ■■■■■■■■■■■■■■■                   47% | ETA: 26s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■                 53% | ETA: 23s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■               59% | ETA: 20s
 #> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■             65% | ETA: 17s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■            70% | ETA: 15s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■           74% | ETA: 14s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■         79% | ETA: 11s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■        84% | ETA:  9s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■       88% | ETA:  6s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■     92% | ETA:  4s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    96% | ETA:  2s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■            71% | ETA: 14s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■          77% | ETA: 11s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■        83% | ETA:  8s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■      89% | ETA:  5s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■     95% | ETA:  2s
 #> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  100% | ETA:  0s
 #> # A tibble: 100 × 18
 #>    id      title description category updated first_period last_period time_unit

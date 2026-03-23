@@ -1,28 +1,29 @@
 # Working with multiple APIs
 
-One of rpx’s strengths is its ability to connect to any PX-Web instance
-with the same interface. This vignette shows how to compare data across
-national statistics agencies.
+One of pixieweb’s strengths is its ability to connect to any PX-Web
+instance with the same interface. This vignette shows how to compare
+data across national statistics agencies.
 
-**The honest truth about cross-country comparison:** The rpx functions
-work identically across APIs, but the *data* is not harmonised. Table
-IDs, variable names, and code systems differ between countries. The
-workflow is: find a comparable table in each country (the hard part),
-then use identical rpx code to fetch and combine the results.
+**The honest truth about cross-country comparison:** The pixieweb
+functions work identically across APIs, but the *data* is not
+harmonised. Table IDs, variable names, and code systems differ between
+countries. The workflow is: find a comparable table in each country (the
+hard part), then use identical pixieweb code to fetch and combine the
+results.
 
 > **Prerequisite:** This vignette assumes you are comfortable with the
 > basics from
-> [`vignette("a-quickstart")`](https://lchansson.github.io/rpx/articles/a-quickstart.md).
+> [`vignette("a-quickstart")`](https://lchansson.github.io/pixieweb/articles/a-quickstart.md).
 
 ## Available APIs
 
 ``` r
-library(rpx)
+library(pixieweb)
 
 px_api_catalogue()
 ```
 
-rpx ships with a catalogue of known PX-Web instances. You can also
+pixieweb ships with a catalogue of known PX-Web instances. You can also
 connect to any PX-Web API by providing a full URL.
 
 ## Connecting to multiple agencies
@@ -48,15 +49,15 @@ no search endpoint. Table discovery requires walking a folder
 hierarchy. - **v2**: Modern, GET+POST data queries, full-text search,
 codelists endpoint, saved queries.
 
-rpx handles both versions transparently. The user-facing functions have
-the same signatures — only the internal request building differs.
+pixieweb handles both versions transparently. The user-facing functions
+have the same signatures — only the internal request building differs.
 
 Some selection helpers are v2-only:
-[`px_bottom()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-[`px_from()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-[`px_to()`](https://lchansson.github.io/rpx/reference/px_selections.md),
+[`px_bottom()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+[`px_from()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+[`px_to()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
 and
-[`px_range()`](https://lchansson.github.io/rpx/reference/px_selections.md)
+[`px_range()`](https://lchansson.github.io/pixieweb/reference/px_selections.md)
 will raise an informative error if used against a v1 API.
 
 ## Cross-country comparison example
@@ -81,7 +82,7 @@ ssb_tables |> table_describe(max_n = 3)
 Note that table IDs are completely different between countries, and
 variable names may also differ (“Region” in SCB vs other names
 elsewhere). Always run
-[`variable_describe()`](https://lchansson.github.io/rpx/reference/variable_describe.md)
+[`variable_describe()`](https://lchansson.github.io/pixieweb/reference/variable_describe.md)
 on each table before building your query:
 
 ``` r
@@ -100,7 +101,7 @@ ssb_vars |> variable_describe()
 ## Combining results
 
 Since
-[`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md)
+[`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md)
 returns standard tibbles with a `table_id` column, you can bind results
 from different APIs:
 
@@ -131,19 +132,19 @@ bind_rows(results, .id = "country")
   queries.
 - **API limits differ.** SCB allows ~100 000 cells per request; other
   agencies may allow less. Use `api$config$max_cells` to check.
-  [`prepare_query()`](https://lchansson.github.io/rpx/reference/prepare_query.md)
+  [`prepare_query()`](https://lchansson.github.io/pixieweb/reference/prepare_query.md)
   respects the limit automatically.
 - **v1 vs v2.** Not all agencies have migrated to v2. Selection helpers
-  [`px_from()`](https://lchansson.github.io/rpx/reference/px_selections.md),
-  [`px_range()`](https://lchansson.github.io/rpx/reference/px_selections.md)
+  [`px_from()`](https://lchansson.github.io/pixieweb/reference/px_selections.md),
+  [`px_range()`](https://lchansson.github.io/pixieweb/reference/px_selections.md)
   etc. raise an informative error if used against a v1 API. Check
   `api$version` and the catalogue’s `versions` column.
 
 ## Next steps
 
 - **Data model & advanced features** —
-  [`vignette("introduction-to-rpx")`](https://lchansson.github.io/rpx/articles/introduction-to-rpx.md)
+  [`vignette("introduction-to-pixieweb")`](https://lchansson.github.io/pixieweb/articles/introduction-to-pixieweb.md)
   covers codelists, wide output, and query composition.
 - **Quick refresher** —
-  [`vignette("a-quickstart")`](https://lchansson.github.io/rpx/articles/a-quickstart.md)
+  [`vignette("a-quickstart")`](https://lchansson.github.io/pixieweb/articles/a-quickstart.md)
   for the single-API basics.

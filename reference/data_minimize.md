@@ -13,7 +13,7 @@ data_minimize(data_df, remove_monotonous_data = TRUE)
 - data_df:
 
   A tibble returned by
-  [`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md).
+  [`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md).
 
 - remove_monotonous_data:
 

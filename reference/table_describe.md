@@ -13,7 +13,7 @@ table_describe(table_df, max_n = 5, format = "inline", heading_level = 2)
 - table_df:
 
   A tibble returned by
-  [`get_tables()`](https://lchansson.github.io/rpx/reference/get_tables.md).
+  [`get_tables()`](https://lchansson.github.io/pixieweb/reference/get_tables.md).
 
 - max_n:
 

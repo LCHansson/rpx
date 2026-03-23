@@ -1,7 +1,7 @@
 # Generate a citation for downloaded data
 
 Produces a citation string from metadata attached to data by
-[`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md).
+[`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md).
 
 ## Usage
 
@@ -14,7 +14,7 @@ px_cite(data_df)
 - data_df:
 
   A tibble returned by
-  [`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md).
+  [`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md).
 
 ## Value
 

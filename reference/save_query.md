@@ -22,7 +22,7 @@ save_query(api, table_id, ..., .codelist = NULL, verbose = FALSE)
 - ...:
 
   Variable selections (same as
-  [`get_data()`](https://lchansson.github.io/rpx/reference/get_data.md)).
+  [`get_data()`](https://lchansson.github.io/pixieweb/reference/get_data.md)).
 
 - .codelist:
 

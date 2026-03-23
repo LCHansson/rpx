@@ -1,7 +1,8 @@
 # Connect to a PX-Web API
 
-Creates a `<px_api>` connection object used by all other rpx functions.
-You can pass a known alias (e.g. `"scb"`, `"ssb"`) or a full base URL.
+Creates a `<px_api>` connection object used by all other pixieweb
+functions. You can pass a known alias (e.g. `"scb"`, `"ssb"`) or a full
+base URL.
 
 ## Usage
 

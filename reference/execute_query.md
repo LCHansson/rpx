@@ -1,7 +1,7 @@
 # Execute a composed query
 
 Low-level function to execute a query built with
-[`compose_data_query()`](https://lchansson.github.io/rpx/reference/compose_data_query.md).
+[`compose_data_query()`](https://lchansson.github.io/pixieweb/reference/compose_data_query.md).
 Handles rate limiting, retries, and error handling.
 
 ## Usage
