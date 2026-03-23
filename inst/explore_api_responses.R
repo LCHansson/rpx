@@ -1,5 +1,5 @@
 # Explore raw PX-Web API responses
-# Run interactively to understand the JSON structures that rpx parses.
+# Run interactively to understand the JSON structures that pixieweb parses.
 
 library(httr2)
 library(jsonlite)
