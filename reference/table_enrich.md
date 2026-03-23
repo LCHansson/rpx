@@ -203,23 +203,22 @@ if (px_available(scb)) {
 #>     statistics by region and sex. Year 2025--</a> 
 #> 
 #> ℹ Enriching 100 table(s) with metadata.
-#> Fetching metadata ■■                                 3% | ETA: 38s
-#> Fetching metadata ■■■                                5% | ETA: 41s
-#> Fetching metadata ■■■■                              11% | ETA: 42s
-#> Fetching metadata ■■■■■■                            17% | ETA: 40s
-#> Fetching metadata ■■■■■■■■                          23% | ETA: 38s
-#> Fetching metadata ■■■■■■■■■■                        29% | ETA: 35s
-#> Fetching metadata ■■■■■■■■■■■                       35% | ETA: 32s
-#> Fetching metadata ■■■■■■■■■■■■■                     41% | ETA: 29s
-#> Fetching metadata ■■■■■■■■■■■■■■■                   47% | ETA: 26s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■                 53% | ETA: 23s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■               59% | ETA: 20s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■             65% | ETA: 17s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■            71% | ETA: 14s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■          77% | ETA: 11s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■        83% | ETA:  8s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■      89% | ETA:  5s
-#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■     95% | ETA:  2s
+#> Fetching metadata ■■                                 3% | ETA: 35s
+#> Fetching metadata ■■■■                               9% | ETA: 40s
+#> Fetching metadata ■■■■■                             15% | ETA: 39s
+#> Fetching metadata ■■■■■■■                           21% | ETA: 36s
+#> Fetching metadata ■■■■■■■■■                         28% | ETA: 33s
+#> Fetching metadata ■■■■■■■■■■■                       34% | ETA: 31s
+#> Fetching metadata ■■■■■■■■■■■■■                     40% | ETA: 28s
+#> Fetching metadata ■■■■■■■■■■■■■■■                   47% | ETA: 25s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■                 53% | ETA: 22s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■               59% | ETA: 19s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■             66% | ETA: 16s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■           72% | ETA: 13s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■          78% | ETA: 10s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■        84% | ETA:  8s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■      90% | ETA:  5s
+#> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■     94% | ETA:  3s
 #> Fetching metadata ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  100% | ETA:  0s
 #> # A tibble: 100 × 18
 #>    id      title description category updated first_period last_period time_unit
